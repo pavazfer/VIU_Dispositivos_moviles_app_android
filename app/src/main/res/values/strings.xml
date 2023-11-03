@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">Actividad1</string>
+    <string name="app_name">Domestic Tasks</string>
+
+    <!-- PANTALLA INICIO/HOME -->
+    <string name="gestion_tareas">Gestión de Tareas Domésticas</string>
+    <string name="ver_tareas">Ver Tareas Diarias</string>
+    <string name="agregar_nueva_tarea">Agregar Nueva Tarea</string>
+    <string name="asignar_tarea_familar">Asignar Tareas a Familiares</string>
+
+    <!-- PANTALLA LISTADO -->
+    <string name="lista_tareas_diarias">Lista de Tareas Diarias</string>
+
+    <string name="lista_tareas">Listado de tareas</string>
+    <string name="task">Tarea</string>
+    <string name="progress">Progreso</string>
+
+    <!-- DETALLE -->
+    <string name="detalles">Detalles</string>
+    <string name="name_tarea">Nombre de la tarea</string>
+    <string name="descripcion_tarea">Descripción de la Tarea</string>
+    <string name="fecha_limite">Fecha Límite</string>
+    <string name="materiales_necesarios">Materiales Necesarios</string>
+    <string name="guardar_progreso">Guardar Progreso</string>
+
+    <!-- ASIGNAR TAREAS  -->
+    <string name="assign_tasks">Asignar tareas</string>
+    <string name="familiar">Familiar</string>
+    <string name="assing">Asignar</string>
+
+    <!-- COMUNES -->
+    <string name="atras">Atrás</string>
+
+
+
 </resources>

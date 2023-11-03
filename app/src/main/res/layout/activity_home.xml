@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gestion_tareas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonVerTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ver_tareas"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonAgregarTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agregar_nueva_tarea"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonAsignarTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/asignar_tarea_familar"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
+
+
