@@ -4,6 +4,7 @@ import TasksAdapter
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -58,7 +59,6 @@ class TaskDetails: AppCompatActivity() {
 
         val rangeSlider = findViewById<RangeSlider>(R.id.rangeSlider)
         val buttonSaveProgress = findViewById<Button>(R.id.saveProgressButton)
-        // modifyProgress(rangeSlider, buttonSaveProgress, taskName)
         buttonSaveProgress.setOnClickListener {
             if (taskName != null) {
                 modifyProgress(rangeSlider, taskName)

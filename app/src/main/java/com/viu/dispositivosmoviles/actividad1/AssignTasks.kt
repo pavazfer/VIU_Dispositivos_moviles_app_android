@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -24,8 +25,13 @@ class AssignTasks: AppCompatActivity() {
         taskNameSpinner = findViewById(R.id.taskSpinner)
         familyMemberSpinner = findViewById(R.id.familyMemberSpinner)
 
-        val buttonAtras = findViewById<Button>(R.id.assignButton)
+        val buttonAtras = findViewById<Button>(R.id.backButton)
         buttonAtras.setOnClickListener {
+            finish() // Finaliza la actividad actual al hacer clic en el botón "Atrás"
+        }
+
+        val buttonAssign = findViewById<Button>(R.id.assignButton)
+        buttonAssign.setOnClickListener {
             val selectedTask = taskNameSpinner.selectedItem.toString()
             val selectedFamilyMember = familyMemberSpinner.selectedItem.toString()
             assignTaskToFamilyMember(selectedTask, selectedFamilyMember)
@@ -63,5 +69,14 @@ class AssignTasks: AppCompatActivity() {
 
         // Notifica al adaptador que se han realizado cambios en los datos
         adaptador.notifyDataSetChanged()
+    }
+
+    private fun getImageResourceForTask(taskName: String): Int {
+        return when (taskName) {
+            "Cocinar" -> R.drawable.cocina
+            "Limpiar" -> R.drawable.limpieza
+            "Fregar los platos" -> R.drawable.lavar_platos
+            else -> R.drawable.casa
+        }
     }
 }

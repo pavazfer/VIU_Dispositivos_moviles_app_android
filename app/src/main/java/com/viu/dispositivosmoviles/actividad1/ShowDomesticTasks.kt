@@ -3,6 +3,7 @@ package com.viu.dispositivosmoviles.actividad1
 import TasksAdapter
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,8 +25,6 @@ class ShowDomesticTasks : AppCompatActivity() {
         buttonAtras.setOnClickListener {
             finish() // Finaliza la actividad actual al hacer clic en el botón "Atrás"
         }
-
-
     }
 
     override fun onResume() {

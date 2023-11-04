@@ -25,11 +25,11 @@
     <!-- ASIGNAR TAREAS  -->
     <string name="assign_tasks">Asignar tareas</string>
     <string name="familiar">Familiar</string>
-    <string name="assing">Asignar</string>
+    <string name="assign">Asignar</string>
 
     <!-- COMUNES -->
     <string name="atras">Atrás</string>
-
+    <string name="domestic_tasks">Domestic Tasks</string>
 
 
 </resources>
