@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.viu.dispositivosmoviles.actividad1.R
 import com.viu.dispositivosmoviles.actividad1.TaskDetails
@@ -28,7 +29,6 @@ class TasksAdapter(private val context: Context, private val listaTareas: List<T
         // Setea el progreso en el TextView correspondiente
         holder.textViewProgress.text = "${item.advance}%"
 
-
         holder.itemView.setOnClickListener {
             val intent = Intent(context, TaskDetails::class.java)
             intent.putExtra("taskName", item.name)
@@ -36,6 +36,7 @@ class TasksAdapter(private val context: Context, private val listaTareas: List<T
             intent.putExtra("taskDeadline", item.deadline)
             intent.putExtra("taskMaterials", item.materials)
             intent.putExtra("taskFamily", item.family)
+            intent.putExtra("taskAdvance", item.advance)
             context.startActivity(intent)
         }
     }

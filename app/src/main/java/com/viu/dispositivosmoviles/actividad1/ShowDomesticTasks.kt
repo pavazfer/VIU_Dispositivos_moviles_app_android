@@ -24,5 +24,15 @@ class ShowDomesticTasks : AppCompatActivity() {
         buttonAtras.setOnClickListener {
             finish() // Finaliza la actividad actual al hacer clic en el botón "Atrás"
         }
+
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val recyclerViewTareas = findViewById<RecyclerView>(R.id.recyclerViewTareas)
+        val adaptador = TasksAdapter(this, TasksUtils.getDefaultTasks())
+        recyclerViewTareas.adapter = adaptador
+        recyclerViewTareas.layoutManager = LinearLayoutManager(this)
     }
 }
