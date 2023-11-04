@@ -3,6 +3,8 @@ package com.viu.dispositivosmoviles.actividad1
 import TasksAdapter
 import android.content.Intent
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -22,6 +24,14 @@ class TaskDetails: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Cambiar el color de la barra de estado
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            val window: Window = this.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = resources.getColor(R.color.rojo, theme)
+        }
+
         setContentView(R.layout.activity_task_detail)
 
         val taskName = intent.getStringExtra("taskName")

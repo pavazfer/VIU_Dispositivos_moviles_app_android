@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/blanco">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,6 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/detalles"
+            android:textColor="@color/rojo"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp" />
@@ -34,6 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/name_tarea"
+        android:textColor="@color/rojo"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
@@ -43,6 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/descripcion_tarea"
+        android:textColor="@color/negro"
         android:textSize="18sp"
         android:layout_marginBottom="16dp" />
 
@@ -51,6 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fecha_limite"
+        android:textColor="@color/negro"
         android:textSize="18sp"
         android:layout_marginBottom="8dp" />
 
@@ -59,6 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/materiales_necesarios"
+        android:textColor="@color/negro"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
@@ -67,6 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/familiar"
+        android:textColor="@color/negro"
         android:textSize="18sp" />
 
     <com.google.android.material.slider.RangeSlider
@@ -75,7 +83,15 @@
         android:layout_height="wrap_content"
         android:valueFrom="0"
         android:valueTo="100"
-        android:stepSize="1" />
+        android:stepSize="1"
+        app:tickColorActive="@color/rojo"
+        app:tickColorInactive="@color/negro"
+        app:thumbColor="@color/rojo"
+        app:thumbStrokeColor="@color/rojo"
+        app:trackColorActive="@color/rojo"
+        app:trackColorInactive="@color/negro"
+        app:haloColor="@color/rojo"
+        app:labelStyle="@style/CustomRangeSliderLabel"  />
 
     <!-- LinearLayout adicional para los botones -->
     <LinearLayout
@@ -88,17 +104,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/atras"
+            android:textColor="@color/blanco"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/rojo"/>
 
         <Button
             android:id="@+id/saveProgressButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/guardar_progreso"
+            android:textColor="@color/blanco"
             android:layout_marginTop="16dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:backgroundTint="@color/rojo"/>
 
     </LinearLayout>
 

@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/blanco">
 
 
     <LinearLayout
@@ -26,7 +27,8 @@
             android:text="@string/assign_tasks"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/verde" />
     </LinearLayout>
 
     <TextView
@@ -34,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/task"
+        android:textColor="@color/verde"
         android:textSize="18sp"
         android:layout_marginBottom="16dp" />
 
@@ -41,13 +44,19 @@
         android:id="@+id/taskSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/verde"
+
+        android:backgroundTint="@color/verde"
+        android:popupBackground="@color/verde"
+        android:padding="5dp"/>
 
     <TextView
         android:id="@+id/familyMemberTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/familiar"
+        android:textColor="@color/verde"
         android:textSize="18sp"
         android:layout_marginBottom="16dp" />
 
@@ -55,7 +64,12 @@
         android:id="@+id/familyMemberSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/verde"
+
+        android:backgroundTint="@color/verde"
+        android:popupBackground="@color/verde"
+        android:padding="5dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,17 +81,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/atras"
+            android:textColor="@color/blanco"
             android:layout_weight="1"
             android:layout_marginEnd="8dp"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/verde"/>
 
         <Button
             android:id="@+id/assignButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/assign"
+            android:textColor="@color/blanco"
             android:layout_weight="1"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/verde" />
 
     </LinearLayout>
 

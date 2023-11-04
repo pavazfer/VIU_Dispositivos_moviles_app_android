@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/blanco">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +27,8 @@
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:textColor="@color/naranja"/>
 
     </LinearLayout>
 
@@ -35,21 +37,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ver_tareas"
-        android:layout_marginBottom="16dp" />
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/naranja"/>
 
     <Button
         android:id="@+id/buttonAgregarTarea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/agregar_nueva_tarea"
-        android:layout_marginBottom="16dp" />
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/naranja"/>
 
     <Button
         android:id="@+id/buttonAsignarTareas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/asignar_tarea_familar"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/naranja"/>
 
 </LinearLayout>
 
