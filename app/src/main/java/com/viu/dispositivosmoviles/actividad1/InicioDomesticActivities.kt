@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class InicioDomesticActivities : AppCompatActivity() {
@@ -34,6 +33,8 @@ class InicioDomesticActivities : AppCompatActivity() {
 
         buttonAgregarTarea.setOnClickListener {
             // Implementa la lógica para agregar una nueva tarea doméstica
+            val intent = Intent(this, CreateTask::class.java)
+            startActivity(intent)
         }
 
         buttonAsignarTareas.setOnClickListener {

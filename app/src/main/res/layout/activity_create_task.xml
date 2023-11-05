@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/blanco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/taskImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nueva_tarea" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crear_nueva_tarea"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/amarillo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameTareaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_tarea"
+        android:textColor="@color/amarillo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_tarea"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/amarillo"
+        android:backgroundTint="@color/amarillo"
+        style="@style/CustomEditTextStyle"/>
+
+    <TextView
+        android:id="@+id/descripcionTareaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion_tarea"
+        android:textColor="@color/amarillo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/descripcion_tarea"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/amarillo"
+        android:backgroundTint="@color/amarillo"
+        style="@style/CustomEditTextStyle"/>
+
+    <TextView
+        android:id="@+id/textViewDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha_limite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/amarillo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/textViewSelectedDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fecha_seleccionada"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="@color/amarillo"/>
+
+        <Button
+            android:id="@+id/buttonSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccionar_fecha"
+            android:textColor="@color/blanco"
+            android:backgroundTint="@color/amarillo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/materialesTareaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/materiales_necesarios"
+        android:textColor="@color/amarillo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextMaterials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/materiales_necesarios"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/amarillo"
+        android:backgroundTint="@color/amarillo"
+        style="@style/CustomEditTextStyle" />
+
+    <TextView
+        android:id="@+id/familyMemberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/familiar"
+        android:textColor="@color/amarillo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerFamilyMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/amarillo"
+
+        android:backgroundTint="@color/amarillo"
+        android:popupBackground="@color/amarillo"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/atras"
+            android:textColor="@color/blanco"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/amarillo"/>
+
+        <Button
+            android:id="@+id/buttonCreateTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crear_tarea"
+            android:textColor="@color/blanco"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/amarillo" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -53,7 +53,7 @@ class AssignTasks: AppCompatActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         taskNameSpinner.adapter = adapter
 
-        val familyMembers = arrayOf("Familiar 1", "Familiar 2", "Familiar 3") // Reemplaza con los nombres reales
+        val familyMembers = FamilyUtils.getFamilyMembers()
         val familyAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, familyMembers)
         familyAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         familyMemberSpinner.adapter = familyAdapter

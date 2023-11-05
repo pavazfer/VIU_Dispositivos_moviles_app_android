@@ -27,9 +27,16 @@
     <string name="familiar">Familiar</string>
     <string name="assign">Asignar</string>
 
+    <!-- CREAR TAREA -->
+    <string name="crear_nueva_tarea">Crear Nueva Tarea</string>
+    <string name="seleccionar_fecha">Seleccionar Fecha</string>
+    <string name="fecha_seleccionada">Fecha seleccionada</string>
+    <string name="crear_tarea">Crear Tarea</string>
+
     <!-- COMUNES -->
     <string name="atras">Atrás</string>
     <string name="domestic_tasks">Domestic Tasks</string>
+
 
 
 </resources>

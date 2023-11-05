@@ -36,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/task"
+        android:textStyle="bold"
         android:textColor="@color/verde"
         android:textSize="18sp"
         android:layout_marginBottom="16dp" />
@@ -56,6 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/familiar"
+        android:textStyle="bold"
         android:textColor="@color/verde"
         android:textSize="18sp"
         android:layout_marginBottom="16dp" />

@@ -37,6 +37,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/tareas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -58,7 +59,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <Button
+  <!-- <Button
         android:id="@+id/buttonAtras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,6 +68,26 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/azul"/>
+        android:backgroundTint="@color/azul"
+        android:layout_gravity="start" /> -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tareas">
+
+        <Button
+            android:id="@+id/buttonAtras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/atras"
+            android:textColor="@color/blanco"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/azul"/>
+    </LinearLayout>
 
 </RelativeLayout>
