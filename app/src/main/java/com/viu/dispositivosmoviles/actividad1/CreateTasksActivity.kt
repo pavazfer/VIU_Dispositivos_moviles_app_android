@@ -15,7 +15,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.util.Calendar
 
-class CreateTask : AppCompatActivity() {
+class CreateTasksActivity : AppCompatActivity() {
 
     private lateinit var editTextTaskName: EditText
     private lateinit var editTextTaskDescription: EditText
@@ -72,7 +72,7 @@ class CreateTask : AppCompatActivity() {
 
             if (taskName.isNotEmpty() && taskDescription.isNotEmpty()) {
                 // Lógica para crear la nueva tarea con todos los datos
-                val newTask = TaskDetails()
+                val newTask = ShowTaskDetailsActivity()
                 newTask.name = taskName
                 newTask.description = taskDescription
                 newTask.materials = materials

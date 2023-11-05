@@ -5,12 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.viu.dispositivosmoviles.actividad1.R
-import com.viu.dispositivosmoviles.actividad1.TaskDetails
+import com.viu.dispositivosmoviles.actividad1.ShowTaskDetailsActivity
 
-class TasksAdapter(private val context: Context, private val listaTareas: List<TaskDetails>) :
+class TasksAdapter(private val context: Context, private val listaTareas: List<ShowTaskDetailsActivity>) :
     RecyclerView.Adapter<TasksAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -30,7 +29,7 @@ class TasksAdapter(private val context: Context, private val listaTareas: List<T
         holder.textViewProgress.text = "${item.advance}%"
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(context, TaskDetails::class.java)
+            val intent = Intent(context, ShowTaskDetailsActivity::class.java)
             intent.putExtra("taskName", item.name)
             intent.putExtra("taskDescription", item.description)
             intent.putExtra("taskDeadline", item.deadline)

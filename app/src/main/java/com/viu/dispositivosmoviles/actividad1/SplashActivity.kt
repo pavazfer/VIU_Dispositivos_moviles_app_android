@@ -25,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed({
             // Iniciar la siguiente actividad aquí
-            val intent = Intent(this, InicioDomesticActivities::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
         }, 5000) // 5 segundos

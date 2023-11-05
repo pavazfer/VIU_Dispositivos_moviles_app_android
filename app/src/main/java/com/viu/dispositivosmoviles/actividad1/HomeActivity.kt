@@ -7,7 +7,7 @@ import android.view.WindowManager
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class InicioDomesticActivities : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,19 +27,19 @@ class InicioDomesticActivities : AppCompatActivity() {
 
         buttonVerTareas.setOnClickListener {
             // Implementa la lógica para mostrar la lista de tareas diarias
-            val intent = Intent(this, ShowDomesticTasks::class.java)
+            val intent = Intent(this, ShowTasksActivity::class.java)
             startActivity(intent)
         }
 
         buttonAgregarTarea.setOnClickListener {
             // Implementa la lógica para agregar una nueva tarea doméstica
-            val intent = Intent(this, CreateTask::class.java)
+            val intent = Intent(this, CreateTasksActivity::class.java)
             startActivity(intent)
         }
 
         buttonAsignarTareas.setOnClickListener {
             // Implementa la lógica para asignar tareas a otros miembros de la familia
-            val intent = Intent(this, AssignTasks::class.java)
+            val intent = Intent(this, AssignTasksActivity::class.java)
             startActivity(intent)
         }
     }

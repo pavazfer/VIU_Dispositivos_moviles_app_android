@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-            android:name=".InicioDomesticActivities"
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -31,7 +31,7 @@
         </activity>
 
         <activity
-            android:name=".ShowDomesticTasks"
+            android:name=".ShowTasksActivity"
             android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -39,7 +39,7 @@
         </activity>
 
         <activity
-            android:name=".TaskDetails"
+            android:name=".ShowTaskDetailsActivity"
             android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -47,7 +47,7 @@
         </activity>
 
         <activity
-            android:name=".AssignTasks"
+            android:name=".AssignTasksActivity"
             android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -55,7 +55,7 @@
         </activity>
 
         <activity
-            android:name=".CreateTask"
+            android:name=".CreateTasksActivity"
             android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />

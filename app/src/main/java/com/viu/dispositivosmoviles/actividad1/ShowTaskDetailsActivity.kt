@@ -1,18 +1,16 @@
 package com.viu.dispositivosmoviles.actividad1
 
 import TasksAdapter
-import android.content.Intent
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.slider.RangeSlider
 
-class TaskDetails: AppCompatActivity() {
+class ShowTaskDetailsActivity: AppCompatActivity() {
     var name: String = ""
     var description: String = ""
     var deadline: String = ""
